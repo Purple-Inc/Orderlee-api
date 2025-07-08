@@ -56,10 +56,10 @@ public class StripePaymentServiceImpl implements StripePaymentService {
             if (request.getDescription() != null) {
                 paramsBuilder.setDescription(request.getDescription());
             }
-            if (!metadata.isEmpty()) {
-                paramsBuilder.setMetadata(metadata);
-            }
-            
+//            if (!metadata.isEmpty()) {
+//                paramsBuilder.setMetadata(metadata);
+//            }
+//
             PaymentIntent intent = PaymentIntent.create(paramsBuilder.build());
             return intent.getClientSecret();
             
