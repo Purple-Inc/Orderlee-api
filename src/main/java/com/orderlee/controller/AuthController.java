@@ -51,14 +51,14 @@ public class AuthController {
         }
     }
     
-    @PostMapping("/resend-verification")
-    public ResponseEntity<?> resendVerificationEmail(@RequestParam String email) {
-        try {
-            userService.resendVerificationEmail(email);
-            return ResponseEntity.ok(new ApiResponse(true, "Verification email sent successfully"));
-        } catch (Exception e) {
-            return ResponseEntity.badRequest()
-                .body(new ApiResponse(false, e.getMessage()));
-        }
-    }
+//    @PostMapping("/resend-verification")
+//    public ResponseEntity<?> resendVerificationEmail(@RequestParam String email) {
+//        try {
+//            userService.resendVerificationEmail(email);
+//            return ResponseEntity.ok(new ApiResponse(true, "Verification email sent successfully"));
+//        } catch (Exception e) {
+//            return ResponseEntity.badRequest()
+//                .body(new ApiResponse(false, e.getMessage()));
+//        }
+//    }
 }

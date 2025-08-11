@@ -9,7 +9,7 @@ public interface UserService {
     AuthResponse signup(SignupRequest signupRequest);
     AuthResponse login(LoginRequest loginRequest);
     User verifyEmail(String token);
-    void resendVerificationEmail(String email);
+   // void resendVerificationEmail(String email);
     User getCurrentUser();
     User updateProfile(User user);
 }
