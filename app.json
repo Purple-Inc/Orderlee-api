@@ -1,0 +1,24 @@
+{
+  "name": "Orderlee App",
+  "description": "Backend API for Orderlee Business management service application.",
+  "repository": "https://github.com/yourusername/orderlee-api",
+  "keywords": ["java", "spring boot", "heroku", "business-manager"],
+  "env": {
+    "JAVA_OPTS": {
+      "description": "Java runtime options",
+      "value": "-Xmx300m -Xss512k"
+    },
+    "SPRING_PROFILES_ACTIVE": {
+      "description": "Spring profile to use",
+      "value": "production"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/java"
+    }
+  ],
+  "scripts": {
+    "postdeploy": "echo 'Deployment completed!'"
+  }
+}
