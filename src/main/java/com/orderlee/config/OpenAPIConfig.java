@@ -17,7 +17,7 @@ public class OpenAPIConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("JWT Authentication API")
+                        .title("Orderlee API Documentation.")
                         .version("1.0")
                         .description("API with JWT Bearer Token Authentication"))
                 .addSecurityItem(new SecurityRequirement().addList("Bearer Authentication"))
