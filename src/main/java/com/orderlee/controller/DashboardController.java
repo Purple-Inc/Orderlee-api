@@ -73,4 +73,12 @@ public class DashboardController {
                 .body(new ApiResponse(false, e.getMessage()));
         }
     }
+
+    @GetMapping ("/")
+    @ResponseBody
+    public String host(){
+        return "App is running";
+    }
+
+
 }
